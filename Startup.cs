@@ -45,7 +45,7 @@ namespace StartupDemo
                fl.RegisterValidatorsFromAssemblyContaining<Startup>();
                 fl.ImplicitlyValidateChildProperties = true;
            });
-            services.AddTransient<IValidator<ReportRequestBody>, ReportRequestBodyValidator>();
+            services.AddTransient<IValidator<CreateReportRequestDto>, CreateReportRequestValidator>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
